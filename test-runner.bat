@@ -12,25 +12,8 @@ set AccessKey=%1
 REM By default we run web testing
 set ProjectPath="%cd%\GithubActionsExample.pjs"
 
-REM IF "%2" == "Mobile" GOTO MobileProjectRun
-REM IF "%2" == "Web" GOTO WebProjectRun
-REM IF NOT %2.==. GOTO ParamProjectPath
-REM GOTO EchoProjectPath
-
-:MobileProjectRun
-set ProjectPath="%cd%\MobileTesting\MobileTesting.pjs"
-GOTO EchoProjectPath
-
-:WebProjectRun
-set ProjectPath="%cd%\WebTesting\WebTesting.pjs"
-GOTO EchoProjectPath
-
-:ParamProjectPath
-set ProjectPath=%2
-GOTO EchoProjectPath
 
 
-:EchoProjectPath
 ECHO Starting TestExecute for project %ProjectPath%
 ECHO ## TestExecute Run for %2 :rocket: | tee -a "%cd%\summary.md"
 ECHO: | tee -a "%cd%\summary.md"
