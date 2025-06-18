@@ -10,12 +10,12 @@ IF %1.==. GOTO AccessKeyMissing
 set AccessKey=%1
 
 REM By default we run web testing
-set ProjectPath="%cd%\WebTesting\WebTesting.pjs"
+set ProjectPath="%cd%\GithubActionsExample.pjs"
 
-IF "%2" == "Mobile" GOTO MobileProjectRun
-IF "%2" == "Web" GOTO WebProjectRun
-IF NOT %2.==. GOTO ParamProjectPath
-GOTO EchoProjectPath
+REM IF "%2" == "Mobile" GOTO MobileProjectRun
+REM IF "%2" == "Web" GOTO WebProjectRun
+REM IF NOT %2.==. GOTO ParamProjectPath
+REM GOTO EchoProjectPath
 
 :MobileProjectRun
 set ProjectPath="%cd%\MobileTesting\MobileTesting.pjs"
