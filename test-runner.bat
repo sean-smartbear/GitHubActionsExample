@@ -10,7 +10,7 @@ IF %1.==. GOTO AccessKeyMissing
 set AccessKey=%1
 
 REM By default we run web testing
-set ProjectPath="%cd%\GithubActionsExample.pjs"
+set ProjectPath="%cd%\GithubActionsExample\GithubActionsExample.pjs"
 
 
 
