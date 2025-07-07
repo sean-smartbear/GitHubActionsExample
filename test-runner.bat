@@ -14,9 +14,9 @@ set ProjectPath="%cd%\GithubActionsExample.pjs"
 
 
 
-ECHO Starting TestExecute for project %ProjectPath%
-ECHO ## TestExecute Run for %2 :rocket: | tee -a "%cd%\summary.md"
-ECHO: | tee -a "%cd%\summary.md"
+REM ECHO Starting TestExecute for project %ProjectPath%
+REM ECHO ## TestExecute Run for %2 :rocket: | tee -a "%cd%\summary.md"
+REM ECHO: | tee -a "%cd%\summary.md"
 GOTO ExecuteTest
 
 
