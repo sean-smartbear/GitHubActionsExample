@@ -6,8 +6,6 @@ REM Variable to track if tests passed
 set Tests_Passed=0
 set Error_Level=0
 
-IF %1.==. GOTO AccessKeyMissing
-set AccessKey=%1
 
 REM By default we run web testing
 set ProjectPath="%cd%\GithubActionsExample\GithubActionsExample.pjs"
